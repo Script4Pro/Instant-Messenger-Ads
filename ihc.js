@@ -3,7 +3,7 @@ function showad(){if(!closed){$('#chatbox').animate({opacity:1,bottom:'0',height
 function hidead(){$('#chatbox').animate({opacity:1,bottom:'0',height:'hide'},2000,function(){next_timeout=setTimeout(showad,4000);});}
 if(chatbox){setTimeout(showad,1000);}
 var x_close=document.getElementById('im_close');x_close.onclick=function(){$.cookie(cookie_name,'1',{expires:1,path:'/'});closed=true;$('#chatbox').animate({opacity:1,bottom:'0',height:'hide'},2000,function(){next_timeout=setTimeout(showad,7500);});return false;};}
-function doMyStuff($){myjQuery=$;$(document).ready(function(){$.getScript("https://raw.githubusercontent.com/Unfokiller/Instant-Messenger-Ads/master/jquery.cookie.noconflict.js",function(data,status){chaturbate_popup.startUp($);});});}
+function doMyStuff($){myjQuery=$;$(document).ready(function(){$.getScript("https://chaturbate.com/static/js/jquery.cookie.noconflict.js",function(data,status){chaturbate_popup.startUp($);});});}
 function check(){if(window.jQuery&&jQuery.fn){var arr=jQuery.fn.jquery.split('.');if(arr.length>=2){if(arr[0]>1||(arr[0]==1&&arr[1]>=3)){return true;}}}
 return false;}
 if(check()){doMyStuff(jQuery);}else{var script=document.createElement('script');script.src='https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js';window.addEventListener('load',function(){document.body.insertBefore(script,document.body.firstChild);var timer=setInterval(function(){if(check()){clearInterval(timer);document.body.removeChild(script);doMyStuff(jQuery.noConflict(true));}},30);});}
